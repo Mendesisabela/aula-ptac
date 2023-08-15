@@ -13,6 +13,7 @@ export const middleware = (request) => {
             return NextResponse.redirect(urlLogin);
         }
     }
+
     NextResponse.next();
 };
 export const config = {
