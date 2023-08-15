@@ -7,10 +7,16 @@ export default async function Dashboard() {
         <div>
             <h1>Dashboard</h1>
             
+
+
+    <div>
+
+            {Usuarios.map((user) => 
+                <h1>{user.name}</h1>
+
+            )}
+    </div>
+    
         </div>
-
-            {Usuarios.map((user)} =>
-            {user.name}
-
     );
 };
