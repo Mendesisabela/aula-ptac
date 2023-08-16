@@ -14,6 +14,12 @@ export const middleware = (request) => {
         }
     }
 
+    if (isTokenValidated || token) {
+        if (request.nextUrl.pathname === '/') {
+        }
+    }
+
+
     NextResponse.next();
 };
 export const config = {
