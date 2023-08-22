@@ -3,14 +3,14 @@
 const Usuarios = [
     {
         name : "mendes",
-        email : "isabelapicoli26@gmail.com",
+        email : "isabela@gmail.com",
         password : "mene",
         token : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 },
-
+    
 {
     name : "vitoria",
-    email : "   ",
+    email : "vitoria@gmail.com",
     password : "toria",
     token : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 },
@@ -21,8 +21,6 @@ const Usuarios = [
     password : "belinha",
     token : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 }
-
-
 ]
 
 
@@ -44,8 +42,6 @@ const getUsers = () =>{
 
 
 }
-
-
 
 
 export { getUsers, getUserAuthenticated };
