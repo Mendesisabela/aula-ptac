@@ -9,10 +9,14 @@ function Register() {
  
     return (
     <body>
-
+        <ul>
+        <li><a href={"/pages/register"} class="active">Cadastrar</a></li>
+          <li><a href={"/pages/dashboard"}>Home</a></li>
+           <li><a href={"/pages/alter"}>Alterar</a></li>
+       </ul>
 
       <div class="page"> 
-    <form class="register">
+            <form class="register">
         <h1>Registrar</h1>
         <p>Digite suas informações de registro nos campos abaixo.</p>
 
