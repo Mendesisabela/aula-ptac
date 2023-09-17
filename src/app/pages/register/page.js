@@ -17,7 +17,7 @@ function Register() {
 
       <div class="page"> 
             <form class="register">
-        <h1>Registrar</h1>
+        <h1>Cadastrar</h1>
         <p>Digite suas informações de registro nos campos abaixo.</p>
 
         <label for="text">Nome</label>
