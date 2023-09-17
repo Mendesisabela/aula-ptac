@@ -1,6 +1,7 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense } from "react";
 import ListUsers from "@/app/componentes/ListUsers";
+import styles from './style.css'
 
 export default async function Dashboard() {
     const users = await getUsers();
