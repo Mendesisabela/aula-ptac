@@ -1,66 +1,12 @@
- body {
+body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     color: #663b92;
     overflow: hidden;
     height: 100vh;
- background: #7e7483;
+    background: #7e7483;
 }
-
-
-li {
-    display: inline;
-  }
-
-  li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-    background-color: #48425A;
-
-  }
-
-  ul {
-    background-color: #dddddd;
-    
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2e293f;
-
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: #dddddd;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .active {
-    background-color: #04AA6D;
-  }
-
-
-
   
 
 .page{
@@ -73,7 +19,7 @@ li {
   height: 100vh;
 }
 
-.alter{
+.login{
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -84,21 +30,21 @@ li {
 }
 
 
-.alter h1 {
+.login h1 {
   padding: 0;
   margin: 0;
   font-weight: 500;
   font-size: 2.3em;
 }
 
-.alter p {
+.login p {
   display: inline-block;
   font-size: 14px;
   color: #161515;
   margin-bottom: 25px;
 }
 
-.alter input {
+.login input {
   padding: 15px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -110,13 +56,13 @@ li {
 }
 
 
-.alter label {
+.login label {
   font-size: 14px;
   color: #663b92;
   font-weight: 600;
 }
 
-.alter a {
+.login a {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 13px;
@@ -124,7 +70,7 @@ li {
   transition: all linear 160ms;
 }
 
-.alter a:hover {
+.login a:hover {
   color: #663b92;
 }
 
