@@ -2,10 +2,14 @@
 import { Suspense } from "react";
 import 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer, toast } from 'react-toastify';
-import styles from './style.css'
+import './style.css'
 
 function Register() {
-    const notify =() => toast.success("Usuário cadastrado com sucesso!");
+    const Registro = (event) => {
+    toast.success("Usuário cadastrado com sucesso!");
+    event.preventDefault(); 
+}
+    
  
     return (
     <body>
@@ -15,8 +19,11 @@ function Register() {
            <li><a href={"/pages/alter"}>Alterar</a></li>
        </ul>
 
+
+
       <div class="page"> 
-            <form class="register">
+            <form class="register" onSubmit={Registro} >
+
         <h1>Cadastrar</h1>
         <p>Digite suas informações de registro nos campos abaixo.</p>
 
@@ -27,7 +34,7 @@ function Register() {
         <label for="password">Senha</label>
         <input type="password" placeholder="Digite sua senha"/>
 
-        <button className="button" onClick={notify}>Register</button>
+        <button className="button">Register</button>
         <ToastContainer />
     </form>
     </div>
