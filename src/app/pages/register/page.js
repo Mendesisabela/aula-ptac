@@ -6,7 +6,7 @@ import './style.css'
 
 function Register() {
     const Registro = (event) => {
-    toast.success("Usuário cadastrado com sucesso!");
+    toast.success("O usuário foi cadastrado com sucesso!");
     event.preventDefault(); 
 }
     

@@ -2,13 +2,15 @@
 import { Suspense } from "react";
 import 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer, toast } from 'react-toastify';
-import styles from './style.css'
+import './style.css'
 
 function Alter() {
-    const notify =() => toast.success("O usuário foi alterado!");
-
+    const Alterar = (event) => {
+    toast.success("O usuário foi alterado!");
+    event.preventDefault(); 
+}
     return (
-        <body className={styles.alter}>
+        <body>
         <ul>
         <li><a href={"/pages/alter"} class="active">Alterar</a></li>
         <li><a href={"/pages/dashboard"}>Home</a></li>
@@ -17,7 +19,7 @@ function Alter() {
 
 
        <div class="page"> 
-            <form class="alter">
+            <form class="alter" onSubmit={Alterar}>
         <h1>Alterar</h1>
         <p>Digite suas informações para alteração nos campos abaixo.</p>
 
@@ -28,7 +30,7 @@ function Alter() {
         <label for="password">Senha</label>
         <input type="password" placeholder="Digite sua senha"/>
 
-        <button className="button" onClick={notify}>Alterar</button>
+        <button className="button">Alterar</button>
         <ToastContainer />
     </form>
     </div>

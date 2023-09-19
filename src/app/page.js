@@ -4,7 +4,7 @@ import handlerAcessUser from "./functions/handlerAcess"
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import styles from './style.css'
+import './style.css'
 
 export default function Login() {
   const [user, setUser] = useState({
@@ -25,6 +25,9 @@ export default function Login() {
       refresh();
     }
   }
+
+
+  
   return (
     <div class="page"> 
       <form onSubmit={handlerLogin} class="login">
