@@ -5,6 +5,8 @@ return (
         {users?.map((user, index) =>
         <p key={index}>
             {user.name}
+            <br/>
+            {user.password}
         </p>
         )}
     </div>
